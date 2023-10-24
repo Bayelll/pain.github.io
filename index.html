@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeathNode</title>
+    <link rel="stylesheet" href="DeathNodeRU/layt.css">
+    
+    
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0a0a0a;
+    }
+
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.893);
+        z-index: 999;
+    }
+
+    .panel {
+        background-color: #434040;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.5s;
+    }
+
+    .close-button {
+        display: block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #e74c3c;
+        color: rgb(254, 204, 204);
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .close-button:hover {
+        background-color: #f5cfcb;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+
+
+
+
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <div class="panel">
+            <h2>Введите (uwu)</h2>
+            <input type="text" id="inputField" placeholder="Ваше слово">
+            <button id="closePanelButton" class="close-button">Дальше</button>
+        </div>
+    </div>
+    
+    <script>
+        const overlay = document.getElementById("overlay");
+        
+        const inputField = document.getElementById("inputField");
+    
+        closePanelButton.addEventListener("click", () => {
+            // Проверяем, равно ли введенное значение "uwu"
+            if (inputField.value.toLowerCase() === "uwu") {
+                overlay.style.display = "none"; // Если равно, скрываем панель
+            } else {
+                alert("Ошибка: Введите 'uwu'"); // Если не равно, выводим ошибку
+            }
+        });
+    
+        // Автоматически открываем панель при загрузке страницы
+        overlay.style.display = "flex";
+    </script>
+
+
+    <div class="wood">
+        <button>Next1</button>
+        <img src="DeathNodeRU/deathnode_Pictures/ad.jpg" alt="" height="950px" width="100%">
+        <h3>Death Node</h3>
+    </div>
+
+    <div class="mainvideo">
+        <video src="DeathNodeRU/deathnode_Pictures/main1video" autoplay muted loop></video>
+    </div>
+
+
+    <div class="gallery">
+        <div class="thumbnail" >
+            <a href="DeathNodeRU/Biographies/laytbio.html">
+                <img src="DeathNodeRU/deathnode_Pictures/layt.jpeg" alt="">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/lbio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/l1.jpg" alt="">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/misabio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/m1.jpeg" alt="">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/rbio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/r1.jpeg" alt="">
+            </a>
+        </div>
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/rembio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/rem2.jpg" alt="">
+            </a>
+        </div>
+    
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/mellobio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/mello1.jpg" alt="">
+            </a>
+        </div>
+    
+        <div class="thumbnail">
+            <a href="DeathNodeRU/Biographies/niabio.html">
+                <img src="DeathNodeRU/Biographies/layt.vidios/nia.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="t_music">
+        <h1>Музыки</h1>
+    </div>
+
+    <div class="music">
+        <nav>
+            <ul>
+        <a href="music/1.mp3"><li>№1</li></a>
+        <a href="music/2.mp3"><li>№2</li></a>
+        <a href="music/3.mp3"><li>№3</li></a>
+        <a href="music/4.mp3"><li>№4</li></a>
+        <a href="music/5.mp3"><li>№5</li></a>
+        <a href="music/6.mp3"><li>№6</li></a>
+        <a href="music/7.mp3"><li>№7</li></a>
+        <a href="music/8.mp3"><li>№8</li></a>
+        <a href="music/9.mp3"><li>№9</li></a>
+        <a href="music/10.mp3"><li>№10</li></a>
+        <a href="music/11.mp3"><li>№11</li></a>
+        <a href="music/12.mp3"><li>№12</li></a>
+        <a href="music/13.mp3"><li>№13</li></a>
+        <a href="music/14.mp3"><li>№14</li></a>
+        <a href="music/15.mp3"><li>№15</li></a>
+        <a href="music/16.mp3"><li>№16</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="jutsu">
+        <a href="https://jut.su/bookofd/episode-1.html"><button>Смотреть аниме</button></a>
+<a href="https://shakai.ru/manga-read/1/1/1"><button>Читать мангу</button></a>
+    </div>
+
+    <script>
+        const overlay = document.getElementById("overlay");
+        const closePanelButton = document.getElementById("closePanelButton");
+
+        closePanelButton.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+
+        
+
+        // Автоматически открываем панель при загрузке страницы
+        overlay.style.display = "flex";
+    </script>
+
+</body>
+
+</html>
+
+
+
+

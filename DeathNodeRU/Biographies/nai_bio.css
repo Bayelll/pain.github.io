@@ -1,0 +1,20 @@
+body {
+    background-color: black; 
+    color: white; 
+}
+
+.d1>h1
+{
+    text-align: center;
+}
+
+.d1>p
+{
+    font-size: 18px;
+}
+
+.d1>video 
+{
+    width: 350px;
+    height: auto;
+}

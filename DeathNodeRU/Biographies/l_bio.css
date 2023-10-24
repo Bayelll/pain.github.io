@@ -1,0 +1,57 @@
+body
+{
+    background-color: black; 
+    color: white; 
+}
+
+
+.d1>h1
+{
+    text-align: center;
+    size: 18px;
+}
+
+.d1>p
+{
+    font-size: 18px;
+    color: white;
+}
+
+.d2>h1
+{
+    text-align: center;
+    size: 18px;
+}
+
+.d2>p
+{
+    font-size: 18px;
+    color: white;
+}
+
+.d3>h1
+{
+    text-align: center;
+    size: 18px;
+}
+
+.d3>p
+{
+    font-size: 18px;
+    color: white;
+}
+
+@media (min-width: 325px) and (max-width: 768px)
+{
+    .d1>img 
+    {
+        width: 350px;
+        height: auto;
+    }
+
+    .d2>p>video 
+    {
+        width: 400px;
+        height: auto;
+    }
+}

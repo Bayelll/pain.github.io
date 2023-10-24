@@ -1,0 +1,528 @@
+@media (min-width: 800px) and (max-width: 1024px)
+ {
+
+    .wood > button {
+        position: absolute;
+        left: 1700px;
+        top: 400px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #ff5733; /* Красный цвет фона */
+        color: #fff; /* Белый цвет текста */
+        border: none;
+        border-radius: 50px; /* Круглые углы для создания эффекта */
+        cursor: pointer;
+        overflow: hidden; /* Скрываем излишний контент за пределами кнопки */
+        z-index: 1; /* Устанавливаем выше чем анимация */
+        transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+    }
+    
+    .wood > button::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #ff5733 100%); /* Градиентный эффект */
+        transition: width 0.3s ease; /* Плавное изменение ширины */
+        z-index: -1; /* Помещаем под кнопку */
+    }
+    
+    .wood > button:hover {
+        background-color: #ff0000; /* Изменение цвета фона при наведении */
+    }
+    
+    .wood > button:hover::before {
+        width: 100%; /* Увеличиваем ширину переднего фона при наведении */
+    }
+
+    
+    .overlay {
+        /* Ваши текущие стили для .overlay */
+        background-color: red(0, 0, 255, 10); /* Оставьте цвет фона, чтобы учитывать прозрачность */
+        backdrop-filter: blur(10px); /* Добавляем размытие фона */
+    }
+            
+
+    
+    
+    .mainvideo>video {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Анимации масштабирования и прозрачности */
+    }
+    
+    .mainvideo>video:hover {
+        transform: scale(1.05); /* Увеличение видео при наведении мыши */
+        opacity: 0.8; /* Уменьшение прозрачности при наведении мыши */
+    }
+    
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-color: #1a1a1a; /* Цвет фона */
+    }
+    
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px; /* Отступы между изображениями */
+        overflow: hidden;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Эффект при наведении */
+    }
+    
+    .thumbnail:hover img {
+        transform: scale(1.1); /* Увеличение при наведении мыши */
+    }
+    
+    
+    
+
+    .wood
+    {
+        position: relative;
+    }
+    
+    .wood > h3 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        font-size: 120px;
+        padding-top: 700px;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-family: "Arial", sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        letter-spacing: 2px; 
+        background: linear-gradient(to bottom, #ff5733, #ff006c); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: pulse 2s infinite; 
+    }
+    
+    @keyframes pulse {
+        0% {
+            opacity: 0.6;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.6;
+        }
+    }
+    
+    
+    .wood>p
+    {
+        font-size: 50px;
+        text-align: center;
+        position: absolute;
+        color: white;
+        padding-top: 850px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .t_music>h1
+    {
+        text-align: center;
+    }
+    
+    
+    .music ul {
+        list-style: none;
+        padding: 0;
+        display: flex; /* Используем flexbox для горизонтального расположения элементов */
+        flex-wrap: wrap; /* Если элементов больше, чем помещается в одну строку, переносим на следующую */
+        justify-content: center; /* Центрируем элементы по горизонтали */
+    }
+    
+    .music ul a {
+        display: inline-block; /* Убираем блочное поведение ссылок */
+        text-decoration: none;
+        color: #3498db;
+        font-size: 18px;
+        margin: 10px; /* Добавляем небольшой отступ между элементами */
+        transition: color 0.3s ease;
+    }
+    
+    .music ul a:hover {
+        color: #e74c3c;
+    }
+    
+    
+    
+    
+    
+    .jutsu {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .jutsu a button {
+        background-color: #3498db;
+        color: #fff; 
+        font-size: 24px;
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    
+    .jutsu a button:hover {
+        background-color: #e74c3c; 
+        transform: scale(1.05); 
+    }
+    
+    
+    .jutsu a {
+        text-decoration: none;
+    }
+    
+    
+    .jutsu a button:focus {
+        outline: none;
+    }
+    
+    
+    
+    body {
+        background-color: black; 
+        color: rgb(44, 43, 43); 
+      }
+ 
+} 
+
+
+/* Стили для устройств с минимальной шириной экрана 768px и больше */
+@media (min-width: 768px) {
+    /* Кнопка */
+    .wood > button {
+        position: absolute;
+        left: 1700px;
+        top: 400px;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #ff5733;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        transition: background-color 0.3s ease;
+    }
+    
+    .wood > button::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, #ff5733 100%);
+        transition: width 0.3s ease;
+        z-index: -1;
+    }
+    
+    .wood > button:hover {
+        background-color: #ff0000;
+    }
+    
+    .wood > button:hover::before {
+        width: 100%;
+    }
+
+    /* Overlay */
+    .overlay {
+        background-color: rgba(255, 0, 0, 0.1);
+        backdrop-filter: blur(1px);
+    }
+
+    /* Видео */
+    .mainvideo>video {
+        width: 80%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .mainvideo>video:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+
+    /* Галерея */
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        background-color: #1a1a1a;
+    }
+    
+    .thumbnail {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        overflow: hidden;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .thumbnail:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Заголовок */
+    .wood > h3 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        font-size: 120px;
+        padding-top: 700px;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-family: "Arial", sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 2px;
+        background: linear-gradient(to bottom, #ff5733, #ff006c);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            opacity: 0.6;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.6;
+        }
+    }
+
+    /* Текст */
+    .wood > p {
+        font-size: 50px;
+        text-align: center;
+        position: absolute;
+        color: white;
+        padding-top: 850px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* Заголовок музыки */
+    .t_music > h1 {
+        text-align: center;
+    }
+
+    /* Музыкальные ссылки */
+    .music ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .music ul a {
+        display: inline-block;
+        text-decoration: none;
+        color: #3498db;
+        font-size: 18px;
+        margin: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    .music ul a:hover {
+        color: #e74c3c;
+    }
+
+    /* Кнопка */
+    .jutsu {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .jutsu a button {
+        background-color: #3498db;
+        color: #fff;
+        font-size: 24px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .jutsu a button:hover {
+        background-color: #e74c3c;
+        transform: scale(1.05);
+    }
+    
+    .jutsu a {
+        text-decoration: none;
+    }
+    
+    .jutsu a button:focus {
+        outline: none;
+    }
+
+    /* Фон */
+    body {
+        background-color: black;
+        color: rgb(44, 43, 43);
+    }
+
+    
+}
+
+@media (min-width: 325px) and (max-width: 768px) 
+{
+        .wood
+    {
+        position: relative;
+    }
+
+    .wood>img 
+    {
+        width: 375px;
+        height: auto;
+    }
+
+    .mainvideo>video 
+    {
+        text-align: center;
+        width: 375px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .wood>h3
+    {
+        position: absolute;
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 170px;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-family: "Arial", sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        letter-spacing: 2px; 
+        background: linear-gradient(to bottom, #ff5733, #ff006c); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: pulse 2s infinite; 
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: auto;
+        margin: 0 5px; /* Уменьшаем отступы между изображениями */
+        overflow: hidden;
+        display: inline-block; /* Делаем элементы строчными для размещения в одном ряду */
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .t_music>h1
+    {
+        text-align: center;
+        color: #b18585;
+    } 
+
+    .music ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .music ul a {
+        display: inline-block;
+        text-decoration: none;
+        color: #3498db;
+        font-size: 18px;
+        margin: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    .music ul a:hover {
+        color: #e74c3c;
+    }
+
+    .jutsu {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .jutsu a button {
+        background-color: #3498db;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .jutsu a button:hover {
+        background-color: #e74c3c;
+        transform: scale(1.05);
+    }
+    
+    .jutsu a {
+        text-decoration: none;
+    }
+    
+    .jutsu a button:focus {
+        outline: none;
+    }
+}
+
+

@@ -1,0 +1,23 @@
+body {
+    background-color: black; 
+    color: white; 
+}
+
+.d1>h1
+{
+    text-align: center;
+}
+
+.d1>p
+{
+    font-size: 18px;
+}
+
+@media (min-width: 325px) and (max-width: 768px)
+{
+    .d1>img 
+    {
+        width: 300px;
+        height: auto;
+    }
+}
